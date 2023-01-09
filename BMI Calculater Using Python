@@ -1,0 +1,30 @@
+'''BMI Calculator'''
+print("Enter your Name ")
+name=input()
+print("Enter Your Height in cms")
+height=int(input())
+height=height/100
+print("Enter your weight in kilograms")
+weight=int(input())
+print("Calculating your BMI .............")
+BMI=round( weight/(height*height),2)
+print(name+" Your BMI is",BMI)
+if BMI>0 :
+    if BMI<18.5:
+        print("Classification : Underweight,Health-risk : Minimal")
+    elif BMI>=18.5 and BMI<25:
+        print("Classification : Normal Weight,Health-risk : Minimal")
+    elif BMI>=25 and BMI<30:
+        print("Classification : OverWeight,Health-risk : Increased")
+    elif BMI>=30 and BMI<35:
+        print("Classification : Obese Class-1,Health-risk : High")
+    elif BMI>=35 and BMI<40:
+        print("Classification : Obese Class-2,Health-risk : Very High")
+    else:
+        print("Classification : Obese Class-3,Health-risk : Extremely High")
+else:
+    print("Invalid Input")
+
+   
+        
+    
